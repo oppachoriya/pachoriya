@@ -13,8 +13,8 @@
 	"minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "AdsCottage\\Entity\\": "application/models/entities/",
-            "AdsCottage\\Repository\\": "application/models/repositories/",
+		  "AdsCottage\\Entity\\": "application/models/Entities/",
+		  "AdsCottage\\Repository\\": "application/models/Repositories/",
             "AdsCottage\\": "application/src/"
         }
     },
