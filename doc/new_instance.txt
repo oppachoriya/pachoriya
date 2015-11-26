@@ -1,0 +1,60 @@
+-- Ubuntu 12.04 LTS
+
+sudo bash
+apt-get update
+
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-php5
+
+##Enable https Module
+sudo a2enmod ssl
+##Enable Apache's Module Rewrite
+a2enmod rewrite
+sudo apt-get install php5
+
+sudo apt-get install postfix
+sudo apt-get install postfix-mysql
+sudo apt-get install mysql-client-core-5.5
+sudo apt-get install mysql-server
+sudo apt-get install php5-mysql
+sudo apt-get install php5-mcrypt
+sudo apt-get install php5-curl
+sudo apt-get install php5-intl
+sudo apt-get install mailutils
+sudo apt-get install php5-imap
+
+##Copy these files
+/etc/apache2/sites-available/default
+/etc/apache2/sites-available/default-ssl
+
+SSLCertificateFile /home/ubuntu/keys/public.crt
+SSLCertificateKeyFile /home/ubuntu/keys/www.dealvector.com.key
+SSLCACertificateFile /home/ubuntu/keys/intermediate.crt
+//Enable https
+sudo a2ensite default-ssl
+sudo /etc/init.d/apache2 restart
+
+
+//Copy Code from Root using script
+mkdir -p /usr/dealvector/logs
+mkdir -p /usr/dealvector/uploads
+mkdir -p /usr/dealvector/blog/wp-content/uploads
+mkdir -p /var/dealvector_compressed
+mkdir -p /var/www/dealvector
+mkdir -p /var/backup_dealvector/
+
+chmod -R 777 /var/dealvector_compressed
+chmod 777 /var/www
+sudo chmod -R 777 /usr/dealvector/logs
+sudo chmod -R 777 /usr/dealvector/uploads
+sudo chmod -R 777 /usr/dealvector/blog/wp-content/uploads
+
+//Run the script from local dovecot server to copy code from SVN to New Instance
+
+//SET Crons
+
+//Move Upload Folder
+
+//mail -s "CommandLine Subject" piyush.tiwari@talentica.com
+
+//Create link for blog repository
