@@ -3,19 +3,13 @@
 	"name": "pachoriya/adscottage",
 	"type": "project",
 	"homepage": "http://www.adscottage.com",
-	"license": "MIT",
-	"support": {
-		"forum": "http://forum.codeigniter.com/",
-		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
-		"irc": "irc://irc.freenode.net/codeigniter",
-		"source": "https://github.com/bcit-ci/CodeIgniter"
-	},
+	"license": "Paid",
 	"minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-		  "AdsCottage\\Entity\\": "application/models/Entities/",
-		  "AdsCottage\\Repository\\": "application/models/Repositories/",
-            "AdsCottage\\": "application/src/"
+		  	"AdsCottage\\Entity\\": "application/models/Entities/",
+		  	"AdsCottage\\Repository\\": "application/models/Repositories/",
+		  	"AdsCottage\\": "application/src/"
         }
     },
     "autoload-dev": {
