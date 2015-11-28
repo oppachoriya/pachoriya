@@ -24,7 +24,9 @@
         "doctrine/orm": "2.4.*",
         "phpunit/phpunit": "4.3.*",
         "phpunit/dbunit": ">=1.2",
-        "jms/serializer-bundle": "*"		
+	  "jms/serializer-bundle": "*",
+	  "phpoffice/phpexcel": "1.8.0",
+	  "monolog/monolog": "*"
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*"
