@@ -6,7 +6,7 @@
  * Date: 26-11-2015
  * Time: 23:23
  */
-class Cron
+class Cron extends CI_Controller
 {
     function __construct()
     {
