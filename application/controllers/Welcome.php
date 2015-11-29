@@ -87,6 +87,12 @@ class Welcome extends CI_Controller
             'Contact Us' => '/info/contact',
         ];
 
+        $data['pricing_info'] = [
+            ["name" => 'Basic', "price" => "3", "period" => "per month", "user" => "1 User", "project" => "1  projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => false, "link" => "#"],
+            ["name" => 'Moderate', "price" => "5", "period" => "per month", "user" => "2 User", "project" => "3  projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => true, "link" => "#"],
+            ["name" => 'Ultra', "price" => "10", "period" => "per month", "user" => "5 User", "project" => "10  projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => false, "link" => "#"],
+            ["name" => 'Advance', "price" => "100", "period" => "per month", "user" => "60 User", "project" => "120 projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => false, "link" => "#"]
+        ];
         $data['page_content'] = 'info/contact';
         $this->load->view('layout/default', $data);
     }

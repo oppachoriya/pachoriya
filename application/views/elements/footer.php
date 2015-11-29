@@ -62,9 +62,10 @@
 
                     <div>
                         <form action="/info/newsletter" method="post" id="footer-newsletter">
+
                             <input type="email" placeholder="Enter your email address..." name="newsletter-email"
-                                   id="newsletter-email" style="color: #2f2f2f"/>
-                            <input type="submit" value="Send" class="btn btn-default" "/>
+                                   id="newsletter-email" style="color: #2f2f2f; width:70%" class="form-control"/>
+                            <input type="submit" value="Send" class="btn btn-default"/>
                         </form>
                     </div>
                     </p>
