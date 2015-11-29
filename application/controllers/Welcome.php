@@ -42,7 +42,8 @@ class Welcome extends CI_Controller
 
         $data['css_data'] = [
             "/css/adscottage.css",
-            "/css/bootstrap.min.css"
+            "/css/bootstrap.min.css",
+            "/css/font-awesome.min.css"
         ];
 
         $data['js_data'] = [
@@ -58,31 +59,35 @@ class Welcome extends CI_Controller
                 "googleplus" => ""],
             'phone' => ['+91 7769871184',
                 '+91 8600378752'],
-            'address' => ['Yugal Nadala, Baner, Pune, Maharastra (India)'],
+            'address' => ['Yugal Nadala, Baner, Pune, Maharashtra (India)'],
             'email' => ['info@adscottage.com']
         ];
 
         $data['tab_list'] = ['Home' => '/home',
-            'Why Us' => ['Features' => '/info/feature',
-                'Pricing' => '/info/pricing'],
-            'Services' => ['Services' => 'info/services',
-                'Planning' => 'info/planning',
-                'Research' => 'info/research',
-                'Advertisers' => 'info/advertisers',
-                'Ad Site Owners' => 'info/adsiteowner',
-                'Creative Makers' => 'info/creativemaker'],
             'Inventory' => ['Map Based' => '/explore/map',
                 'Gallery' => '/explore/gallery'],
-            'About' => ['About' => '/info/about',
+            'Services' => ['Services' => '/info/services',
+                'Planning' => '/info/planning',
+                'Research' => '/info/research',
+                'Advertisers' => '/info/advertisers',
+                'Ad Site Owners' => '/info/adsiteowner',
+                'Creative Makers' => '/info/creativemaker'],
+            'Why Us' => ['Features' => '/info/feature',
+                'Pricing' => '/info/pricing'],
+            'About' => [
+                'About' => '/info/about',
                 'Testimonial' => '/info/testimonial',
-                'Team' => '/info/team',
-                'Contact Us' => '/info/contact'],
-            'Career' => ['Career' => '/info/job',
-                'Culture' => '/info/culture']
+                'Team' => '/info/team'],
+            'Join Us' => ['Advertisers' => '/joinus/advertisers',
+                'Ad Site Owners' => '/joinus/adsiteowner',
+                'Creative Makers' => '/joinus/creativemaker',
+                'Sales' => '/joinus/sales',
+                'Technology' => '/joinus/tech',
+                /*'Culture' => '/info/culture'*/],
+            'Contact Us' => '/info/contact',
         ];
 
-        $data['page_content'] = "";
-
+        $data['page_content'] = null;
         $this->load->view('layout/default', $data);
     }
 }

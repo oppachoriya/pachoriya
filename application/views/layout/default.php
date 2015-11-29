@@ -20,7 +20,9 @@
 </div>
 
 <div id="page_container">
-    <?php echo $page_content; ?>
+    <?php if ($page_content) {
+        $this->load->view($page_content);
+    } ?>
 </div>
 
 <div id="footer_container">

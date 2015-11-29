@@ -1,39 +1,84 @@
-<div class="footer" xmlns="http://www.w3.org/1999/html">
-    <div class="container">
-        <div class="footer-main">
-            <div class="col-md-4">
-                <h3>Get in Touch</h3>
-
-                <p><span class="fa fa-location-arrow"> Phone: +91 7769871184</span></p>
-
-                <p><span class="fa fa-phone-square"> Phone: +91 7769871184</span></p>
-            </div>
-
-            <div class="col-md-4">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#"><span class="fa fa-facebook-square"> </span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter-square"> </span></a></li>
-                    <li><a href="#"><span class="fa fa-google-plus-square"> </span></a></li>
-                    <li><a href="#"><span class="fa fa-linkedin-square"> </span></a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4">
-                <form id="newsletter" action="/register/newsletter" method="post">
-                    <h3>Join Our Newsletter</h3>
+<div id="footer" class="footer">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        <b>Get in touch</b>
+                    </h3>
 
                     <p>
-                        <input type="text" id="newsletter_email" name="newsletter_email">
-                        <label class="hvr-wobble-bottom"> <input type="submit" value="Send"></label>
-                    </p>
-                </form>
-            </div>
 
-            <div class="clearfix"></div>
-            <div class="text-center">
-                <p>2015 AdsCottage All rights reserved </p>
+                    <div class="fa fa-home">
+                        <?php echo $contacts['address'][0]; ?>
+                    </div>
+                    </p>
+                    <p>
+
+                    <div class="fa fa-envelope">
+                        <?php echo $contacts['email'][0]; ?>
+                    </div>
+                    </p>
+                    <p>
+
+                    <div class="fa fa-phone">
+                        <?php echo $contacts['phone'][0]; ?>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>
+                        <b>Keep in touch</b>
+                    </h3>
+
+                    <p>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="<?php echo $contacts['social']['facebook']; ?>" style="color: #FFFFFF ; ">
+                                <i class="fa fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $contacts['social']['twitter']; ?>" style="color: #FFFFFF ; ">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $contacts['social']['googleplus']; ?>" style="color: #FFFFFF ; ">
+                                <i class="fa fa-google-plus fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>
+                        <b>Stay Updated</b>
+                    </h3>
+
+                    <p>
+
+                    <div>
+                        <form action="/info/newsletter" method="post" id="footer-newsletter">
+                            <input type="email" placeholder="Enter your email address..." name="newsletter-email"
+                                   id="newsletter-email" style="color: #2f2f2f"/>
+                            <input type="submit" value="Send" style="color: #2f2f2f; "/>
+                        </form>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="border-top: 1px solid #FFFFFF; font-size: 12px;">
+                <div class="col-md-6" style="text-align: left">
+                    Policies: <a href="#">Terms of use</a> | <a href="#">Privacy</a>
+                </div>
+                <div class="col-md-6" style="text-align: right">
+                    Copyright: <a href="www.adscottage.com">www.Adscottage.com</a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
 </div>
+
