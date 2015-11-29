@@ -87,7 +87,7 @@ class Welcome extends CI_Controller
             'Contact Us' => '/info/contact',
         ];
 
-        $data['page_content'] = null;
+        $data['page_content'] = 'info/contact';
         $this->load->view('layout/default', $data);
     }
 }

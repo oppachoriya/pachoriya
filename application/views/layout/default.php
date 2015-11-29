@@ -19,7 +19,7 @@
     <?php $this->load->view('elements/header'); ?>
 </div>
 
-<div id="page_container">
+<div id="page_container" style="margin:  100px 0px 50px 0px; padding: 10">
     <?php if ($page_content) {
         $this->load->view($page_content);
     } ?>

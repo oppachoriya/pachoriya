@@ -1,5 +1,5 @@
 <div id="footer" class="footer">
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -16,7 +16,7 @@
                     <p>
 
                     <div class="fa fa-envelope">
-                        <?php echo $contacts['email'][0]; ?>
+                        <a href="mailto:<?php echo $contacts['email'][0]; ?>"><?php echo $contacts['email'][0]; ?></a>
                     </div>
                     </p>
                     <p>
@@ -64,7 +64,7 @@
                         <form action="/info/newsletter" method="post" id="footer-newsletter">
                             <input type="email" placeholder="Enter your email address..." name="newsletter-email"
                                    id="newsletter-email" style="color: #2f2f2f"/>
-                            <input type="submit" value="Send" style="color: #2f2f2f; "/>
+                            <input type="submit" value="Send" class="btn btn-default" "/>
                         </form>
                     </div>
                     </p>
@@ -75,7 +75,7 @@
                     Policies: <a href="#">Terms of use</a> | <a href="#">Privacy</a>
                 </div>
                 <div class="col-md-6" style="text-align: right">
-                    Copyright: <a href="www.adscottage.com">www.Adscottage.com</a>
+                    Copyright &copy; <a href="www.adscottage.com">www.Adscottage.com</a> 2015
                 </div>
             </div>
         </div>
