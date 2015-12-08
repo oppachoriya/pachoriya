@@ -1,6 +1,6 @@
 <div id="footer" class="footer">
     <nav class="navbar navbar-inverse">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-md-4">
                     <h3>

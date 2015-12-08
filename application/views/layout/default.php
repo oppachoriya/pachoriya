@@ -15,17 +15,17 @@
     ?>
 </head>
 <body>
-<div id="header_container">
+<div id="header_container" class="container">
     <?php $this->load->view('elements/header'); ?>
 </div>
 
-<div id="page_container" style="margin:  100px 0px 50px 0px; padding: 10">
+<div id="page_container" class="container"> <!-- style="margin:  100px 0px 50px 0px; padding: 10px" -->
     <?php if ($page_content) {
         $this->load->view($page_content);
     } ?>
 </div>
 
-<div id="footer_container">
+<div id="footer_container" class="container">
     <?php $this->load->view('elements/footer'); ?>
 </div>
 <?php

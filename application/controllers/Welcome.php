@@ -43,7 +43,8 @@ class Welcome extends CI_Controller
         $data['css_data'] = [
             "/css/adscottage.css",
             "/css/bootstrap.min.css",
-            "/css/font-awesome.min.css"
+            "/css/font-awesome.min.css",
+            "/css/map.css"
         ];
 
         $data['js_data'] = [
@@ -93,7 +94,7 @@ class Welcome extends CI_Controller
             ["name" => 'Ultra', "price" => "10", "period" => "per month", "user" => "5 User", "project" => "10  projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => false, "link" => "#"],
             ["name" => 'Advance', "price" => "100", "period" => "per month", "user" => "60 User", "project" => "120 projects", "info_1" => "info 1", "info_2" => "info 2", "info_4" => "info 4", "info_3" => "info 3", "isbest" => false, "link" => "#"]
         ];
-        $data['page_content'] = 'info/contact';
+        $data['page_content'] = 'explore/map';
         $this->load->view('layout/default', $data);
     }
 }
